@@ -20,12 +20,10 @@
 
 > احترم حقوق الملكية لدعم استمرار وتطوير هذا المشروع التعليمي.
 
+Console.WriteLine("enter your grade")
 
             string grade = Console.ReadLine();
-            if (grade == "A")
-            {
-                Console.WriteLine("Excellent");
-            }
+           
             switch (grade)
             {
                 case "A":
@@ -45,3 +43,4 @@
                     
 
                     
+
