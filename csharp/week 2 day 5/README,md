@@ -1,0 +1,65 @@
+﻿في التكليف دا كتبت المتغيرات الاول الي هستخدمهم  و خليت اليوزر يكتب كل درجة جابها و جبت المتوسط و حسبت من if هو ناجح ولا لا و تقديره ايه
+بعد ما خلصت ال if كتبت ال do while الي تخلي البرنامج يتعاد من تاني لو هندخل درجات طالب تاني 
+
+حقوق الملكية الفكرية  
+
+<img src="https://res.cloudinary.com/dpl0kiz1a/image/upload/v1760872563/1_gjjb2a.png" alt="حقوق الملكية" width="100"/>  
+
+- 💬 واتساب : [اضغط هنا](https://wa.me/201555303227)  
+- 📩 البريد الرسمي : codejourney02@gmail.com  
+- 💼 LinkedIn : [https://www.linkedin.com/company/code-journey25/](https://www.linkedin.com/company/code-journey25/)  
+
+© 2025 Code Journey. جميع الحقوق محفوظة.  
+
+- الاستخدام شخصي وتعليمي فقط.  
+- لا يُسمح بالنسخ أو النشر أو التوزيع دون إذن كتابي.  
+- يمكن الاقتباس مع ذكر المصدر ورابط مباشر.  
+- أي تعديل أو إعادة استخدام يحتاج موافقة مسبقة.  
+
+> احترم حقوق الملكية لدعم استمرار وتطوير هذا المشروع التعليمي.
+
+            char choice;
+            do
+            {
+                float grade1, grade2, grade3, average;
+                Console.WriteLine("enter  student grades");
+                grade1 = float.Parse(Console.ReadLine());
+                grade2 = float.Parse(Console.ReadLine());
+                grade3 = float.Parse(Console.ReadLine());
+                average = (grade1 + grade2 + grade3) / 3;
+                if (average >= 50)
+
+                    Console.WriteLine("pass");
+
+                else
+
+                    Console.WriteLine("fail");
+
+
+
+                if (average >= 90)
+
+                    Console.WriteLine("excellent");
+
+
+                else if (average >= 80)
+
+                    Console.WriteLine("very good");
+
+
+                else if (average >= 70)
+
+                    Console.WriteLine("good");
+
+                else if (average >= 60)
+
+                    Console.WriteLine("fair");
+
+
+                else Console.WriteLine("weak");
+                Console.WriteLine();
+                Console.WriteLine("do you want to calculate another student ");
+                choice = Convert.ToChar(Console.ReadLine());
+            } while (choice == 'y');
+
+            Console.WriteLine("program ended");
